@@ -1,12 +1,27 @@
 body {
-    background: #708090;
+    background: #ffffff;
 }
 
 footer {
     text-align: center;
+}
+
+footer div {
+    display: inline-block;
+
+    text-align: center;
     background: #ffffff;
-    box-shadow: 6px 6px 40px rgba(0, 0, 0, 0.2);
-    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 
+        6px 6px 40px rgba(0, 0, 0, 0.2),
+        inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    padding: 4px;
+    width: fit-content;
+    height: fit-content;
+}
+
+footer p {
+    margin: 8px;
 }
 
 footer img {
