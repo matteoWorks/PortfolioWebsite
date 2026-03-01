@@ -1,0 +1,18 @@
+body {
+    background: #708090;
+}
+
+footer {
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 6px 6px 40px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+}
+
+footer img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    margin: 0 2px;
+    vertical-align: middle;
+}
