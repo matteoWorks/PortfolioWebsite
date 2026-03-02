@@ -1,27 +1,79 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* section scroll */
+    scroll-behavior: smooth;
+}
+
 body {
     background: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html {
+    /* section scroll */
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+@media (max-width: 768px) {
+    html {
+        scroll-snap-type: none;
+    }
+
+    section {
+        height: auto;     
+        min-height: 100vh; 
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    footer img {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+section {
+    height: 100vh;
+    justify-content: center;
+    /* section scroll */
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+#landing { background: #111; color: white; }
+#history { background: #f2f2f2; color: black; }
+#curriculum { background: #dfe6ff; color: black; }
+
+#preFooter {
+    flex: 1;
 }
 
 footer {
     text-align: center;
+    margin: 1rem;
 }
 
 footer div {
     display: inline-block;
 
-    text-align: center;
     background: #ffffff;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     box-shadow: 
         6px 6px 40px rgba(0, 0, 0, 0.2),
         inset 0 0 0 1px rgba(0, 0, 0, 0.2);
-    padding: 4px;
+    padding: 8px;
     width: fit-content;
     height: fit-content;
 }
 
 footer p {
-    margin: 8px;
+    margin: 0.25rem;
 }
 
 footer img {
