@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-    background: #111111;
+    background: #000000;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -26,32 +26,47 @@ section {
     flex-direction: column;
 }
 
-#landing { background: #111111; color: white; }
-#history { background: #f2f2f2; color: #111111; }
-#curriculum { background: #111111; color: white; }
+#landing { 
+    background: url('../assets/backgrounds/background_landing.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+#history { 
+    background: url('../assets/backgrounds/background_history.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #111111; 
+}
+#curriculum { 
+    background: url('../assets/backgrounds/background_curriculum.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white; 
+}
+
+.left {
+    margin-right: auto;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.right {
+    margin-left: auto;
+    text-align: right;
+    font-size: 2.5rem;
+}
 
 #introduction {
-    text-align: center;
-    font-size: 2rem;
-    letter-spacing: 0.1rem;
-    margin: 1rem;
-}
-
-.bigText {
     font-size: 3rem;
     font-weight: 600;
-}
-
-#introduction p {
-    margin: 0;
-    margin-bottom: 0.8rem;
+    letter-spacing: 0.5rem;
+    margin: 1rem;
+    margin-top: 0;
 }
 
 #introduction img {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
-    margin: 1rem 2rem;
+    margin: 0.6rem;
     vertical-align: middle;
 }
 
@@ -61,21 +76,9 @@ section {
 
 footer {
     text-align: center;
+    font-size: 0.9rem;
     margin: 1rem;
-}
-
-footer div {
-    display: inline-block;
-
-    background: #ffffff;
-    color: #111111;
-    border-radius: 0.75rem;
-    box-shadow: 
-        6px 6px 40px rgba(0, 0, 0, 0.2),
-        inset 0 0 0 1px rgba(0, 0, 0, 0.2);
-    padding: 8px;
-    width: fit-content;
-    height: fit-content;
+    color: white;
 }
 
 footer p {
@@ -83,8 +86,8 @@ footer p {
 }
 
 footer img {
-    width: 1rem;
-    height: 1rem;
+    width: 0.8rem;
+    height: 0.8rem;
     object-fit: contain;
     margin: 0 0.1rem;
     vertical-align: middle;
@@ -100,29 +103,23 @@ footer img {
         min-height: 100vh; 
     }
 
-    #introduction {
-        font-size: 1.2rem;
+    #landing, #history, #curriculum {
+        background-attachment: scroll;
     }
 
-    .bigText {
+    .right {
+        font-size: 1.5rem;
+    }
+
+    #introduction {
         font-size: 2rem;
-        font-weight: 600;
     }
 
     #introduction img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         object-fit: contain;
-        margin: 1rem 1.4rem;
+        margin: 0.6rem;
         vertical-align: middle;
     }   
-
-    footer {
-        font-size: 0.8rem;
-    }
-
-    footer img {
-        width: 0.5rem;
-        height: 0.5rem;
-    }
 }
