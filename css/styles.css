@@ -15,15 +15,22 @@ html {
     /* section scroll */
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    /* no scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+html::-webkit-scrollbar {
+    display: none;
 }
 
+/* SECTION */
 section {
     height: 100vh;
     justify-content: center;
-    /* section scroll */
-    scroll-snap-align: start;
     display: flex;
     flex-direction: column;
+    /* section scroll */
+    scroll-snap-align: start;
 }
 
 #landing { 
@@ -31,7 +38,12 @@ section {
     background-size: cover;
     color: white;
 }
-#history { 
+#projects { 
+    background: url('../assets/backgrounds/background_history.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #111111; 
+}
+#education { 
     background: url('../assets/backgrounds/background_history.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #111111; 
@@ -39,15 +51,15 @@ section {
 #curriculum { 
     background: url('../assets/backgrounds/background_curriculum.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: white; 
+    color: white;
 }
 
+/* INTRODUCTION */
 .left {
     margin-right: auto;
     margin-bottom: 3rem;
     text-align: left;
 }
-
 .right {
     margin-left: auto;
     text-align: right;
@@ -61,15 +73,88 @@ section {
     margin: 1rem;
     margin-top: 0;
 }
-
+#introduction p {
+    margin: 0.4rem;
+    /* hover */
+    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1)
+}
 #introduction img {
     width: 40px;
     height: 40px;
     object-fit: contain;
-    margin: 0.6rem;
+    margin: 0.8rem 0.3rem;
     vertical-align: middle;
+    /* hover */
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
 }
 
+.left p:hover{
+    transform: scale(0.9) translateX(-50px);
+}
+.right p:hover {
+    transform: scale(0.9) translateX(50px);
+}
+#introduction img:hover {
+    transform: scale(1.2);
+}
+
+/* NAVIGATION */
+#topNavigation {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    writing-mode: vertical-lr;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+}
+#topNavigation a {
+    display: inline-block;
+    text-decoration: none;
+    color: red;
+    margin: 0.1rem;
+    /* hover */
+    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#landing:target ~ #topNavigation {
+    display: none;
+}
+
+#navigation {
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    writing-mode: sideways-lr;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+}
+#navigation a {
+    display: inline-block;
+    text-decoration: none;
+    color: red;
+    margin: 0.1rem;
+    /* hover */
+    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+#projects:target ~ #navigation #projectsNavigation {
+    display: none;
+}
+#education:target ~ #navigation #educationNavigation {
+    display: none;
+}
+#curriculum:target ~ #navigation #curriculumNavigation {
+    display: none;
+}
+
+#navigation a:hover {
+    transform: scale(1.1) translateY(-15px);
+}
+#topNavigation a:hover {
+    transform: scale(1.1) translateY(10px);
+}
+
+/* FOOTER */
 #preFooter {
     flex: 1;
 }
