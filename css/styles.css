@@ -38,12 +38,7 @@ section {
     background-size: cover;
     color: white;
 }
-#projects { 
-    background: url('../assets/backgrounds/background_history.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #111111; 
-}
-#education { 
+#history { 
     background: url('../assets/backgrounds/background_history.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #111111; 
@@ -56,11 +51,13 @@ section {
 
 /* INTRODUCTION */
 .left {
+    width: fit-content;
     margin-right: auto;
     margin-bottom: 3rem;
     text-align: left;
 }
 .right {
+    width: fit-content;
     margin-left: auto;
     text-align: right;
     font-size: 2.5rem;
@@ -89,10 +86,10 @@ section {
 }
 
 .left p:hover{
-    transform: scale(0.9) translateX(-50px);
+    transform: scale(0.9) translateX(-30px);
 }
 .right p:hover {
-    transform: scale(0.9) translateX(50px);
+    transform: scale(0.9) translateX(30px);
 }
 #introduction img:hover {
     transform: scale(1.2);
@@ -116,9 +113,6 @@ section {
     /* hover */
     transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
-#landing:target ~ #topNavigation {
-    display: none;
-}
 
 #navigation {
     position: fixed;
@@ -137,21 +131,14 @@ section {
     /* hover */
     transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
-#projects:target ~ #navigation #projectsNavigation {
-    display: none;
-}
-#education:target ~ #navigation #educationNavigation {
-    display: none;
-}
-#curriculum:target ~ #navigation #curriculumNavigation {
-    display: none;
-}
-
 #navigation a:hover {
     transform: scale(1.1) translateY(-15px);
 }
 #topNavigation a:hover {
     transform: scale(1.1) translateY(10px);
+}
+.hidden {
+    display: none;
 }
 
 /* FOOTER */
@@ -179,10 +166,6 @@ footer img {
 }
 
 @media (max-width: 768px) {
-    html {
-        scroll-snap-type: none;
-    }
-
     section {
         height: auto;     
         min-height: 100vh; 
@@ -207,4 +190,9 @@ footer img {
         margin: 0.6rem;
         vertical-align: middle;
     }   
+    
+    footer {
+        text-align: right;
+        margin-left: 4rem;
+    }
 }
