@@ -11,8 +11,8 @@
         <section id="landing">
             <div id="introduction">
                 <div class="left">
-                    <p>matteo baggio;</p>
-                    <p>software engineer;</p>
+                    <p>matteo baggio</p>
+                    <p>software engineer</p>
                 </div>
                 <div class="right">
                     <p>contact me:</p>
@@ -21,19 +21,19 @@
                 </div>
             </div>
         </section>
-        <section id="history">
+        <section id="portfolio">
             <div class="buttonArea">
-                <button>
+                <button data-target="projects">
                     projects
                 </button>
-                <button>
+                <button data-target="experience" class="active">
                     experience
                 </button>
-                <button>
+                <button data-target="education">
                     education
                 </button>
             </div>
-            <div id="projects" class="portfolioBox">
+            <div id="projects" class="portfolioBox active">
                 Projects
             </div>
             <div id="experience" class="portfolioBox">
@@ -68,11 +68,12 @@
         </div>
         <div id="navigation">
             <a id="curriculumNavigation" href="#curriculum">curriculum</a><br>
-            <a id="historyNavigation" href="#history">history</a>
+            <a id="portfolioNavigation" href="#portfolio">portfolio</a>
         </div>
         
         <!--
         <script src="scripts/sectionUpdate.js"></script>
         -->
+        <script src="scripts/portfolioBox.js"></script>
     </body>
 </html>

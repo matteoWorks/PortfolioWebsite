@@ -38,8 +38,8 @@ section {
     background-size: cover;
     color: white;
 }
-#history { 
-    background: url('../assets/backgrounds/background_history.jpg') no-repeat center center fixed;
+#portfolio { 
+    background: url('../assets/backgrounds/background_portfolio.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #111111; 
 }
@@ -86,10 +86,10 @@ section {
 }
 
 .left p:hover{
-    transform: scale(0.9) translateX(-30px);
+    transform: scale(0.95) translateX(-20px);
 }
 .right p:hover {
-    transform: scale(0.9) translateX(30px);
+    transform: scale(0.95) translateX(20px);
 }
 #introduction img:hover {
     transform: scale(1.2);
@@ -115,6 +115,8 @@ section {
 }
 
 #navigation {
+    width: fit-content;
+    height: fit-content;
     position: fixed;
     left: 1rem;
     bottom: 1rem;
@@ -131,14 +133,53 @@ section {
     /* hover */
     transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
-#navigation a:hover {
-    transform: scale(1.1) translateY(-15px);
-}
 #topNavigation a:hover {
-    transform: scale(1.1) translateY(10px);
+    transform: scale(1.1) translateY(5px);
+}
+#navigation a:hover {
+    transform: scale(1.1) translateY(-10px);
 }
 .hidden {
     display: none;
+}
+
+/* PORTFOLIO */
+.buttonArea {
+    display: flex;
+    justify-content: center;
+    margin: 0rem 5rem;
+}
+.buttonArea button {
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    color: black;
+    margin: 0rem 3rem;
+    /* hover */
+    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    cursor: pointer;
+}
+.buttonArea button:hover {
+    transform: scale(1.2) translateZ(30px);
+}
+.buttonArea button.active {
+    color: red;
+}
+
+.portfolioBox {
+    background: url('../assets/backgrounds/background_landing.jpg') no-repeat center center fixed;
+    color: white;
+    border: solid;
+    border-width: 0;
+    border-radius: 12px;
+    margin: 2rem 5rem;
+    padding: 2rem;
+    height: 60vh;
+    /* buttons */
+    display: none;
+}
+.portfolioBox.active {
+    display: block;
 }
 
 /* FOOTER */
@@ -171,12 +212,27 @@ footer img {
         min-height: 100vh; 
     }
 
-    #landing, #history, #curriculum {
+    #landing, #portfolio, #curriculum {
         background-attachment: scroll;
     }
 
     .right {
         font-size: 1.5rem;
+    }
+
+    #topNavigation {
+        writing-mode: horizontal-tb;
+        top: 0.5rem;
+    }
+
+    #navigation {
+        writing-mode: horizontal-tb;
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+
+    #avigation a:hover {
+        transform: scale(1.1) translateY(5px);
     }
 
     #introduction {
@@ -190,6 +246,15 @@ footer img {
         margin: 0.6rem;
         vertical-align: middle;
     }   
+
+    .buttonArea button {
+        font-size: 1.5rem;
+        margin: 0rem;
+    }
+
+    .portfolioBox {
+        margin: 2rem 0rem;
+    }
     
     footer {
         text-align: right;
