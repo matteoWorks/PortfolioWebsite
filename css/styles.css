@@ -182,16 +182,48 @@ section {
     display: block;
 }
 
-/* FOOTER */
-#preFooter {
-    flex: 1;
+/* CURRICULUM */
+#curriculumButtons {
+    margin-top: auto;
+}
+#curriculumButtons button {
+    color: white;
+}
+#curriculumButtons button.active {
+    color: red;
 }
 
+.curriculumBox {
+    text-align: center;
+    display: none;
+    margin-top: 2rem;
+}
+.curriculumBox.active {
+    display: block;
+}
+.curriculumImg {
+    height: 70vh;
+    width: auto;
+}
+
+.downloadButton {
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    color: white;
+    margin: 1rem 0rem;
+    /* hover */
+    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    cursor: pointer;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
     font-size: 0.9rem;
     margin: 1rem;
     color: white;
+    margin-top: auto;
 }
 
 footer p {
@@ -254,6 +286,15 @@ footer img {
 
     .portfolioBox {
         margin: 2rem 0rem;
+    }
+
+    .curriculumImg {
+        width: auto;
+        height: 60vh;
+    }
+
+    .downloadButton {
+        font-size: 1.5rem;
     }
     
     footer {

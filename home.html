@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        
         <section id="landing">
             <div id="introduction">
                 <div class="left">
@@ -21,8 +20,9 @@
                 </div>
             </div>
         </section>
+
         <section id="portfolio">
-            <div class="buttonArea">
+            <div id="portfolioButtons" class="buttonArea">
                 <button data-target="projects">
                     projects
                 </button>
@@ -43,11 +43,32 @@
                 Education
             </div>
         </section>
+
         <section id="curriculum">
-            <div id="curriculumBox">
-                Curriculum
+            <div id="curriculumButtons" class="buttonArea">
+                <button data-target="italianCV">
+                    italian
+                </button>
+                <button data-target="englishCV" class="active">
+                    english
+                </button>
+                <button data-target="japaneseCV">
+                    japanese
+                </button>
             </div>
-            <div id="preFooter"></div>
+            <div id="italianCV" class="curriculumBox">
+                <img class="curriculumImg" src="assets/curriculum/italianCV.png" alt="Italian Curriculum"><br>
+                <button class="downloadButton">download</button>
+            </div>
+            <div id="englishCV" class="curriculumBox active">
+                <img class="curriculumImg" src="assets/curriculum/englishCV.png" alt="English Curriculum"><br>
+                <button class="downloadButton">download</button>
+            </div>
+            <div id="japaneseCV" class="curriculumBox">
+                <img class="curriculumImg" src="assets/curriculum/japaneseCV.png" alt="Japanese Curriculum"><br>
+                <button class="downloadButton">download</button>
+            </div>
+            
             <footer id="footer">
                 <div>
                     <p>
@@ -74,6 +95,6 @@
         <!--
         <script src="scripts/sectionUpdate.js"></script>
         -->
-        <script src="scripts/portfolioBox.js"></script>
+        <script src="scripts/boxSelector.js"></script>
     </body>
 </html>
