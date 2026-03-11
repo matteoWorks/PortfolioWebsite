@@ -174,7 +174,7 @@ section {
     border-width: 0;
     border-radius: 12px;
     margin: 2rem 5rem;
-    padding: 2rem 1.4rem;
+    padding: 3rem 1.4rem;
     height: 60vh;
     justify-content: center;
     align-items: center;
@@ -183,6 +183,45 @@ section {
 }
 .portfolioBox.active {
     display: flex;
+    flex-direction: column;
+}
+
+.portfolioBoxInfo {
+    margin: 0;
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+    color: white;
+    letter-spacing: 0.2rem;
+    /* hover */
+    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.portfolioBoxInfo:hover {
+    transform: scale(0.9) translateZ(30px);
+}
+
+
+/* EXPERIENCE BOX */
+.experienceButtons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 530px;
+}
+.experienceButtons button {
+    border: none;
+    background: transparent;
+    font-size: 1.4rem;
+    color: white;
+    letter-spacing: 0.2rem;
+    /* hover */
+    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    cursor: pointer;
+}
+.experienceButtons button.active {
+    color: #ff0000a2;
+}
+.experienceButtons button:hover {
+    transform: scale(1.2) translateZ(30px);
 }
 
 .experienceBoxBorder {
@@ -190,6 +229,7 @@ section {
     border-radius: 12px;
 
     padding: 0.4rem;
+    margin-top: 0.8rem;
 
     max-width: 530px;
     width: 100%;
@@ -205,11 +245,14 @@ section {
 
     padding: 0rem 1rem;
 
-    height: 60vh;
+    height: fit-content;
     width: 100%;
 
-    display: flex;
+    display: none;
     align-items: flex-start;
+}
+.experienceBox.active {
+    display: flex;
 }
 
 .boxCompanyName {
@@ -299,7 +342,8 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 2.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
     letter-spacing: 0.2rem;
     color: #0284c7;
 }
@@ -309,9 +353,15 @@ section {
     /* hover */
     transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
 }
+#job_ergonInformatica_softwareEngineer_project_other {
+    height: 0.5rem;
+}
+#job_tiesseInformatica_softwareDeveloper_seasonal_other {
+    height: 2rem;
+}
 
 .boxCompanyName:hover {
-    transform: scale(1.2) translateY(10px); 
+    transform: scale(1.1) translateY(10px); 
 }
 .boxExperienceTitle:hover {
     transform: scale(0.9) translateX(-20px); 
@@ -449,7 +499,7 @@ footer img {
     }
 
     #introduction {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     #introduction img {
@@ -468,6 +518,15 @@ footer img {
 
     .portfolioBox {
         margin: 2rem 0rem;
+        padding: 0.8rem 1.4rem;
+    }
+
+    .portfolioBoxInfo {
+        display: none;
+    }
+
+    .experienceButtons {
+        display: none;
     }
 
     .boxExperienceTitle {
@@ -487,8 +546,6 @@ footer img {
         margin-left: 1.2rem;
         margin-right: 1rem;
     }
-
-    #job_zucchetti_softwareDeveloper_internship_other{margin-bottom: 2.2rem;}
 
     .curriculumImg {
         width: auto;
