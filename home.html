@@ -27,10 +27,10 @@
                 <button data-target="projects">
                     projects
                 </button>
-                <button data-target="experience" class="active">
+                <button data-target="experience">
                     experience
                 </button>
-                <button data-target="education">
+                <button data-target="education" class="active">
                     education
                 </button>
             </div>
@@ -39,18 +39,18 @@
                 Projects
             </div>
             <!-- EXPERIENCES -->
-            <div id="experience" class="portfolioBox active">
+            <div id="experience" class="portfolioBox">
                 <p class="portfolioBoxInfo">one year of experience</p>
                 <!-- EXPERIENCE BUTTONS -->
                 <div class="experienceButtons"> 
                     <button data-target="job_tiesseInformatica_softwareDeveloper_seasonal">
-                        '23tiesse
+                        '23SDE
                     </button>
                     <button data-target="job_ergonInformatica_softwareEngineer_project">
-                        '24ergon
+                        '24SWE
                     </button>
                     <button data-target="job_zucchetti_softwareDeveloper_internship" class="active">
-                        '24zucchetti
+                        '24SDE
                     </button>
                 </div>
                 <div class="experienceBoxBorder">
@@ -65,6 +65,7 @@
                             </h1>
                             <p class="boxExperienceInfos">
                                 <span>full-time internship</span>
+                                <span>&#x1F4CD; padua, veneto, italy</span>
                                 <span>may 2024 - june 2024</span>
                             </p>
                             <p class="boxSkillsImages">
@@ -111,6 +112,7 @@
                             </h1>
                             <p class="boxExperienceInfos">
                                 <span>full-time project</span>
+                                <span>&#x1F4CD; castelfranco veneto, veneto, italy</span>
                                 <span>october 2023 - april 2024</span>
                             </p>
                             <p class="boxSkillsImages">
@@ -190,6 +192,7 @@
                             </h1>
                             <p class="boxExperienceInfos">
                                 <span>seasonal</span>
+                                <span>&#x1F4CD; padua, veneto, italy</span>
                                 <span>march 2023 - may 2023</span>
                             </p>
                             <p class="boxSkillsImages">
@@ -234,8 +237,182 @@
                 </div>
             </div>
             <!-- EDUCATION -->
-            <div id="education" class="portfolioBox">
-                Education
+            <div id="education" class="portfolioBox active">
+                <!-- EDUCATION BUTTONS -->
+                <p class="portfolioBoxInfo">education</p>
+                <div class="experienceButtons"> 
+                    <button data-target="education_highschool_fermi">
+                        '19HS
+                    </button>
+                    <button data-target="education_bachelors_unipd" class="active">
+                        '24BSc
+                    </button>
+                    <button data-target="education_japanese_sng">
+                        '27JLS
+                    </button>
+                </div>
+                <!-- CERTIFICATE BUTTONS -->
+                <!--
+                <p class="portfolioBoxInfo">certificates</p>
+                <div class="experienceButtons"> 
+                    <button data-target="education_highschool_fermi">
+                        '23AI
+                    </button>
+                </div>
+                -->
+                <div class="experienceBoxBorder">
+                    <!-- SNG -->
+                    <div class="experienceBox" id="education_japanese_sng">
+                        <div class="boxCompanyName">
+                            @<span style="color: #e10015;"><a href="https://www.sng.ac.jp/" target="_blank" rel="noopener noreferrer">新宿日本語学校</a></span>
+                        </div>
+                        <div class="boxExperienceContent">
+                            <h1 class="boxExperienceTitle" style="color: #e10015;">
+                                japanese language
+                            </h1>
+                            <p class="boxExperienceInfos">
+                                <span>japanese language school</span>
+                                <span>&#x1F4CD; shinjuku, tokyo, japan</span>
+                                <span>april 2025 - march 2027</span>
+                            </p>
+                            <p class="boxSkillsImages">
+                                <img src="assets/language/flag_japan.png" alt="Japanese" title="Japanese">
+                                <img src="assets/language/logo_jlpt_night.png" alt="JLPT" title="JLPT">
+                            </p>
+                            <p class="boxExperienceDetails">
+                                <ul class="boxDetailsList">
+                                    <li class="boxDetailsListItem">
+                                        actively learnt japanese from zero;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        reached a level equivalent to JLPT N3;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        reached a level equivalent to CEFR B1.
+                                    </li>
+                                </ul>
+                            </p>
+                            <p class="boxOther" id="education_japanese_sng_other">
+                            </p>
+                        </div>
+                    </div>
+                    <!-- END SNG -->
+                    <!-- UNIPD -->
+                    <div class="experienceBox active" id="education_bachelors_unipd">
+                        <div class="boxCompanyName">
+                            @<span style="color: #b91c1c;"><a href="https://www.unipd.it/en/" target="_blank" rel="noopener noreferrer">university of padua</a></span>
+                        </div>
+                        <div class="boxExperienceContent">
+                            <h1 class="boxExperienceTitle" style="color: #b91c1c;">
+                                bachelor of science<br>
+                                in computer science
+                            </h1>
+                            <p class="boxExperienceInfos">
+                                <span>deparment of mathematics</span>
+                                <span>&#x1F4CD; padua, veneto, italy</span>
+                                <span>september 2019 - september 2024</span>
+                            </p>
+                            <p class="boxSkillsImages">
+                                <img src="assets/logoAssets/logo_gcc.png" alt="GCC" title="GCC">
+                                <img src="assets/logoAssets/logo_visualstudiocode.png" alt="Visual Studio Code" title="Visual Studio Code">
+                                <img src="assets/logoAssets/logo_cpp.png" alt="C++" title="C++">
+                                <img src="assets/logoAssets/logo_qt.png" alt="Qt" title="Qt">
+                                <img src="assets/logoAssets/logo_sql.png" alt="SQL" title="SQL">
+                                <img src="assets/logoAssets/logo_sql_postgresql.png" alt="PostgreSQL" title="PostgreSQL">
+                                <img src="assets/logoAssets/logo_sql_mysql.png" alt="MySQL" title="MySQL">
+                                <img src="assets/logoAssets/logo_json.png" alt="JSON" title="JSON">
+                                <img src="assets/logoAssets/logo_matlab.png" alt="MatLab" title="MatLab">
+                                <img src="assets/logoAssets/logo_html5.png" alt="HTML5" title="HTML5">
+                                <img src="assets/logoAssets/logo_css3.png" alt="CSS3" title="CSS3">
+                                <img src="assets/logoAssets/logo_php.png" alt="PHP" title="PHP">
+                                <img src="assets/logoAssets/logo_javascript.png" alt="JavaScript" title="JavaScript">
+                                <img src="assets/logoAssets/logo_filezilla.png" alt="FileZilla" title="FileZilla">
+                                <img src="assets/logoAssets/logo_jupyter.png" alt="Jupyter" title="Jupyter">
+                                <img src="assets/logoAssets/logo_python.png" alt="Python" title="Python">
+                                <img src="assets/logoAssets/logo_python_pandas.png" alt="pandas" title="pandas">
+                                <img src="assets/logoAssets/logo_python_numpy.png" alt="NumPy" title="NumPy">
+                                <img src="assets/logoAssets/logo_python_tensorflow.png" alt="TensorFlow" title="TensorFlow">
+                                <img src="assets/logoAssets/logo_wireshark.png" alt="Wireshark" title="Wireshark">
+                                <img src="assets/logoAssets/logo_idapro.png" alt="IDA Pro" title="IDA Pro">
+                                <img src="assets/logoAssets/logo_microsoftexcel.png" alt="Microsoft Excel" title="Microsoft Excel">
+                                <img src="assets/logoAssets/logo_github_night.png" alt="GitHub" title="GitHub">
+                                <img src="assets/logoAssets/logo_uml.png" alt="UML" title="UML">
+                                <img src="assets/logoAssets/logo_staruml.png" alt="StarUML" title="StarUML">
+                            </p>
+                            <p class="boxExperienceDetails">
+                                <ul class="boxDetailsList">
+                                    <li class="boxDetailsListItem">
+                                        lorem ipsum;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        lorem ipsum;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        lorem ipsum;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        lorem ipsum;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        wrote my bachelor of sciences in computer science thesis: "adopting large language models as assistants or substitutes to developers in static analysis".
+                                    </li>
+                                </ul>
+                            </p>
+                            <p class="boxOther" id="education_bachelors_unipd_other">
+                                <a href="https://thesis.unipd.it/handle/20.500.12608/70944" target="_blank" rel="noopener noreferrer">link to thesis</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- END UNIPD -->
+                    <!-- ENRICO FERMI -->
+                    <div class="experienceBox" id="education_highschool_fermi">
+                        <div class="boxCompanyName">
+                            @<span style="color: #3b82f6;"><a href="https://www.liceofermipadova.edu.it/" target="_blank" rel="noopener noreferrer">Liceo Enrico Fermi</a></span>
+                        </div>
+                        <div class="boxExperienceContent">
+                            <h1 class="boxExperienceTitle" style="color: #3b82f6">
+                                scientific highschool diploma
+                            </h1>
+                            
+                            <p class="boxExperienceInfos">
+                                <span>scientific lyceum, applied sciences</span>
+                                <span>&#x1F4CD; padua, veneto, italy</span>
+                                <span>september 2014 - september 2019</span>
+                            </p>
+                            <p class="boxSkillsImages">
+                                <img src="assets/logoAssets/logo_microsoftword.png" alt="Microsoft Word" title="Microsoft Word">
+                                <img src="assets/logoAssets/logo_microsoftexcel.png" alt="Microsoft Excel" title="Microsoft Excel">
+                                <img src="assets/logoAssets/logo_cpp.png" alt="C++" title="C++">
+                                <img src="assets/logoAssets/logo_html5.png" alt="HTML5" title="HTML5">
+                                <img src="assets/logoAssets/logo_css3.png" alt="CSS3" title="CSS3">
+                                <img src="assets/logoAssets/logo_javascript.png" alt="JavaScript" title="JavaScript">
+                                <img src="assets/logoAssets/logo_sql.png" alt="SQL" title="SQL">
+                            </p>
+                            <p class="boxExperienceDetails">
+                                <ul class="boxDetailsList">
+                                    <li class="boxDetailsListItem">
+                                        lorem ipsum;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        lorem ipsum;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        lorem ipsum;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        lorem ipsum;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        lorem ipsum;
+                                    </li>
+                                </ul>
+                            </p>
+                            <p class="boxOther" id="education_highschool_fermi_other">
+
+                            </p>
+                        </div>
+                    </div>
+                    <!-- END ENRICO FERMI -->
             </div>
             <!--
             <div id="highlightedSkills">

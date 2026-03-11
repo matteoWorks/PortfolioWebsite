@@ -187,8 +187,7 @@ section {
 }
 
 .portfolioBoxInfo {
-    margin: 0;
-    margin-bottom: 0.4rem;
+    margin: 0.4rem;
     font-size: 1.2rem;
     color: white;
     letter-spacing: 0.2rem;
@@ -295,17 +294,16 @@ section {
 }
 .boxExperienceInfos span {
     display: block;
+    /* hover */
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
 }
 .boxExperienceInfos span:first-child {
     text-align: left;
-    /* hover */
-    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
+    margin-bottom: 0.2rem;
 }
 .boxExperienceInfos span:last-child {
     text-align: right;
     margin-top: 0.8rem;
-    /* hover */
-    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
 }
 
 .boxSkillsImages {
@@ -359,6 +357,25 @@ section {
 #job_tiesseInformatica_softwareDeveloper_seasonal_other {
     height: 2rem;
 }
+#education_bachelors_unipd_other {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+    letter-spacing: 0.2rem;
+    color: #b91c1c;
+}
+#education_bachelors_unipd_other a {
+    color: inherit;
+    text-decoration: none;
+    /* hover */
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
+}
+#education_japanese_sng_other {
+    height: 1rem;
+}
 
 .boxCompanyName:hover {
     transform: scale(1.1) translateY(10px); 
@@ -366,7 +383,7 @@ section {
 .boxExperienceTitle:hover {
     transform: scale(0.9) translateX(-20px); 
 }
-.boxExperienceInfos span:first-child:hover {
+.boxExperienceInfos span:hover {
     transform: scale(0.9) translateX(-20px);
 }
 .boxExperienceInfos span:last-child:hover {
@@ -375,10 +392,13 @@ section {
 .boxDetailsListItem:hover {
     transform: scale(0.95) translateX(-10px);
 }
+.boxSkillsImages img:hover {
+    transform: scale(1.2);
+}
 #job_zucchetti_softwareDeveloper_internship_other a:hover {
     transform: scale(1.2);
 }
-.boxSkillsImages img:hover {
+#education_bachelors_unipd_other a:hover {
     transform: scale(1.2);
 }
 
