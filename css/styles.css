@@ -108,7 +108,7 @@ section {
 #topNavigation a {
     display: inline-block;
     text-decoration: none;
-    color: red;
+    color: #ff0000a2;
     margin: 0.1rem;
     /* hover */
     transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
@@ -128,7 +128,7 @@ section {
 #navigation a {
     display: inline-block;
     text-decoration: none;
-    color: red;
+    color: #ff0000a2;
     margin: 0.1rem;
     /* hover */
     transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
@@ -155,6 +155,7 @@ section {
     font-size: 2rem;
     color: black;
     margin: 0rem 3rem;
+    letter-spacing: 0.1rem;
     /* hover */
     transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
     cursor: pointer;
@@ -163,23 +164,199 @@ section {
     transform: scale(1.2) translateZ(30px);
 }
 .buttonArea button.active {
-    color: red;
+    color: #ff0000a2;
 }
 
 .portfolioBox {
-    background: url('../assets/backgrounds/background_landing.jpg') no-repeat center center fixed;
+    background: url('../assets/backgrounds/background_portfolioBox.jpg') no-repeat center center fixed;
     color: white;
     border: solid;
     border-width: 0;
     border-radius: 12px;
     margin: 2rem 5rem;
-    padding: 2rem;
+    padding: 2rem 1.4rem;
     height: 60vh;
+    justify-content: center;
+    align-items: center;
     /* buttons */
     display: none;
 }
 .portfolioBox.active {
+    display: flex;
+}
+
+.experienceBoxBorder {
+    background: url('../assets/backgrounds/background_portfolio.jpg') no-repeat center center fixed;
+    border-radius: 12px;
+
+    padding: 0.4rem;
+
+    max-width: 530px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.experienceBox {
+    background: url('../assets/backgrounds/background_portfolioBox.jpg') no-repeat center center fixed;
+    color: white;
+    border-radius: 8px;
+
+    padding: 0rem 1rem;
+
+    height: 60vh;
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.boxCompanyName {
+    writing-mode: sideways-lr;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    letter-spacing: 0.4em;
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* hover */
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
+}
+.boxCompanyName a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.boxExperienceContent {
+    flex: 1;
+    max-height: 58vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 0.5rem;
+}
+
+.boxExperienceTitle {
+    width: fit-content;
+    margin: 0;
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+    /* hover */
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
+}
+
+.boxExperienceInfos {
+    margin: 0;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.15em;
+}
+.boxExperienceInfos span {
     display: block;
+}
+.boxExperienceInfos span:first-child {
+    text-align: left;
+    /* hover */
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
+}
+.boxExperienceInfos span:last-child {
+    text-align: right;
+    margin-top: 0.8rem;
+    /* hover */
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
+}
+
+.boxSkillsImages {
+    margin: 0;
+    margin-top: 0.5rem;
+}
+.boxSkillsImages img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    margin: 0.8rem 0.3rem;
+    vertical-align: middle;
+    /* hover */
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
+}
+
+.boxDetailsList {
+    margin: 0rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding: 0;
+    letter-spacing: 0.1rem;
+}
+.boxDetailsListItem {
+    /* hover */
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
+}
+
+.boxOther {
+    margin: 0rem;
+}
+#job_zucchetti_softwareDeveloper_internship_other {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.2rem;
+    letter-spacing: 0.2rem;
+    color: #0284c7;
+}
+#job_zucchetti_softwareDeveloper_internship_other a {
+    color: inherit;
+    text-decoration: none;
+    /* hover */
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
+}
+
+.boxCompanyName:hover {
+    transform: scale(1.2) translateY(10px); 
+}
+.boxExperienceTitle:hover {
+    transform: scale(0.9) translateX(-20px); 
+}
+.boxExperienceInfos span:first-child:hover {
+    transform: scale(0.9) translateX(-20px);
+}
+.boxExperienceInfos span:last-child:hover {
+    transform: scale(0.9) translateX(20px);
+}
+.boxDetailsListItem:hover {
+    transform: scale(0.95) translateX(-10px);
+}
+#job_zucchetti_softwareDeveloper_internship_other a:hover {
+    transform: scale(1.2);
+}
+.boxSkillsImages img:hover {
+    transform: scale(1.2);
+}
+
+#highlightedSkills {
+    display: inline;
+    text-align: center;
+    font-size: 1.3rem;
+}
+#highlightedSkills span {
+    display: inline-block;
+    color: black;
+    /* hover */
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
+}
+#highlightedSkills img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    margin: 0.8rem 0.3rem;
+    vertical-align: middle;
+    /* hover */
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
+}
+#highlightedSkills span:hover {
+    transform: scale(1.1);
+}
+#highlightedSkills img:hover {
+    transform: scale(1.2);
 }
 
 /* CURRICULUM */
@@ -190,7 +367,7 @@ section {
     color: white;
 }
 #curriculumButtons button.active {
-    color: red;
+    color: #ff0000a2;
 }
 
 .curriculumBox {
@@ -218,7 +395,7 @@ section {
 }
 .downloadButton:hover {
     transform: scale(1.2) translateZ(30px);
-    color: red;
+    color: #ff0000a2;
 }
 
 /* FOOTER */
@@ -286,11 +463,32 @@ footer img {
     .buttonArea button {
         font-size: 1.5rem;
         margin: 0rem;
+        letter-spacing: 0.05rem;
     }
 
     .portfolioBox {
         margin: 2rem 0rem;
     }
+
+    .boxExperienceTitle {
+        font-size: 2rem;
+    }
+
+    .boxExperienceInfos {
+        font-size: 0.9rem;
+    }
+
+    .boxSkillsImages img {
+        height: 26px;
+        width: 26px;
+    }
+
+    .boxDetailsList {
+        margin-left: 1.2rem;
+        margin-right: 1rem;
+    }
+
+    #job_zucchetti_softwareDeveloper_internship_other{margin-bottom: 2.2rem;}
 
     .curriculumImg {
         width: auto;
