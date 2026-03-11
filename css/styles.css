@@ -208,7 +208,8 @@ section {
     display: flex;
     justify-content: center;
     gap: 0.5rem;
-    max-width: 530px;
+    max-width: 650px;
+    flex-wrap: wrap;
 }
 .experienceButtons button {
     border: none;
@@ -219,6 +220,9 @@ section {
     /* hover */
     transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
     cursor: pointer;
+}
+#experienceButtonsPROJECTS button {
+    font-size: 1.2em;
 }
 .experienceButtons button.active {
     color: #ff0000a2;
@@ -385,6 +389,22 @@ section {
 #education_japanese_sng_other {
     height: 0.5rem;
 }
+#projects_bsc_other {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
+    color: #b91c1c;
+}
+#projects_bsc_other a {
+    color: inherit;
+    text-decoration: none;
+    /* hover */
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
+}
 
 .boxCompanyName:hover {
     transform: scale(1.1) translateY(10px); 
@@ -408,6 +428,9 @@ section {
     transform: scale(1.2);
 }
 #education_bachelors_unipd_other a:hover {
+    transform: scale(1.2);
+}
+#projects_bsc_other a:hover {
     transform: scale(1.2);
 }
 

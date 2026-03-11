@@ -24,23 +24,143 @@
 
         <section id="portfolio">
             <div id="portfolioButtons" class="buttonArea">
-                <button data-target="projects">
+                <button data-target="projects" class="active">
                     projects
                 </button>
                 <button data-target="experience">
                     experience
                 </button>
-                <button data-target="education" class="active">
+                <button data-target="education">
                     education
                 </button>
             </div>
             <!-- PROJECTS -->
-            <div id="projects" class="portfolioBox">
-                Projects
+            <div id="projects" class="portfolioBox active">
+                <p class="portfolioBoxInfo" style="font-size: 1.2rem;margin-bottom: 0.8rem;">five+ years of projects</p>
+                <!-- PROFESSIONAL PROJECTS BUTTONS -->
+                <div class="experienceButtons" id="experienceButtonsPROJECTS"> 
+                    <button data-target="bsc_oop22" class="active">
+                        '22BSc/OOP
+                    </button>
+                    <button data-target="bsc_db22">
+                        '22BSc/DB
+                    </button>
+                    <button data-target="bsc_web23">
+                        '23BSc/WEB
+                    </button>
+                    <button data-target="sde_erp23">
+                        '23SDE/ERP
+                    </button>
+                    <button data-target="swe_ml24">
+                        '24SWE/ML
+                    </button>
+                    <button data-target="p_web24">
+                        '24p/WEB
+                    </button>
+                    <button data-target="sde_llm24">
+                        '24SDE/LLM
+                    </button>
+                    <button data-target="p_llm25">
+                        '25p/LLM
+                    </button>
+                    <button data-target="p_web26">
+                        '26p/WEB
+                    </button>
+                </div>
+                <div class="experienceBoxBorder">
+                    <!-- BSC OOP 22 -->
+                    <div class="experienceBox" id="bsc_oop22">
+                        <div class="boxCompanyName">
+                            @<span style="color: #b91c1c;"><a href="https://www.unipd.it/en/" target="_blank" rel="noopener noreferrer">unipd</a></span>
+                        </div>
+                        <div class="boxExperienceContent">
+                            <h1 class="boxExperienceTitle" style="color: #b91c1c;">
+                                graph generator
+                            </h1>
+                            <p class="boxExperienceInfos">
+                                <span>c++ application</span>
+                                <span>&#x1F4CD; object oriented programming, unipd</span>
+                                <span>december 2021 - february 2022</span>
+                            </p>
+                            <p class="boxSkillsImages">
+                                <img src="assets/logoAssets/logo_visualstudiocode.png" alt="Visual Studio Code" title="Visual Studio Code">
+                                <img src="assets/logoAssets/logo_cpp.png" alt="C++" title="C++">
+                                <img src="assets/logoAssets/logo_qt.png" alt="Qt" title="Qt">
+                                <img src="assets/logoAssets/logo_json.png" alt="JSON" title="JSON">
+                                <img src="assets/logoAssets/logo_gcc.png" alt="GCC" title="GCC">
+                            </p>
+                            <p class="boxExperienceDetails">
+                                <ul class="boxDetailsList">
+                                    <li class="boxDetailsListItem">
+                                        designed and developed an intuitive user interface;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        designed and developed classes structured in different hierarchies;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        designed and developed classes that utilize inheritance polymorphism;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        designed and developed an i/o system utilizing a local JSON file;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        documented the above in a project report.
+                                    </li>
+                                </ul>
+                            </p>
+                            <p class="boxOther" id="projects_bsc_other">
+                                <a href="https://gitfront.io/r/matteoWorks/8U2fguu2iMqz/UniversityProjects/raw/Object%20Oriented%20Programming/Relazione.pdf" target="_blank" rel="noopener noreferrer">oop project report</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- END BSC OOP 22 -->
+                    <!-- BSC DB 22 -->
+                    <div class="experienceBox active" id="bsc_db22">
+                        <div class="boxCompanyName">
+                            @<span style="color: #b91c1c;"><a href="https://www.unipd.it/en/" target="_blank" rel="noopener noreferrer">unipd</a></span>
+                        </div>
+                        <div class="boxExperienceContent">
+                            <h1 class="boxExperienceTitle" style="color: #b91c1c;">
+                                private club
+                            </h1>
+                            <p class="boxExperienceInfos">
+                                <span>database</span>
+                                <span>&#x1F4CD; database, unipd</span>
+                                <span>march 2022 - may 2022</span>
+                            </p>
+                            <p class="boxSkillsImages">
+                                <img src="assets/logoAssets/logo_sql.png" alt="SQL" title="SQL">
+                                <img src="assets/logoAssets/logo_sql_mysql.png" alt="MySQL" title="MySQL">
+                                <img src="assets/logoAssets/logo_visualstudiocode.png" alt="Visual Studio Code" title="Visual Studio Code">
+                            </p>
+                            <p class="boxExperienceDetails">
+                                <ul class="boxDetailsList">
+                                    <li class="boxDetailsListItem">
+                                        performed a simple requirement analysis for the product;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        designed a conceptual E-R model, followed by a logical E-R model;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        designed and developed search indexes and often used queries;
+                                    </li>
+                                    <li class="boxDetailsListItem">
+                                        documented the above in a project report.
+                                    </li>
+                                </ul>
+                            </p>
+                            <p class="boxOther" id="projects_bsc_other">
+                                <a href="https://gitfront.io/r/matteoWorks/8U2fguu2iMqz/UniversityProjects/raw/Databases/Private%20Club.pdf" target="_blank" rel="noopener noreferrer">db project report</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- END BSC DB 22 -->
+                </div>
+                
             </div>
             <!-- EXPERIENCES -->
             <div id="experience" class="portfolioBox">
-                <p class="portfolioBoxInfo">one year of experience</p>
+                <p class="portfolioBoxInfo">one+ year of experience</p>
                 <!-- EXPERIENCE BUTTONS -->
                 <div class="experienceButtons"> 
                     <button data-target="job_tiesseInformatica_softwareDeveloper_seasonal">
@@ -166,6 +286,9 @@
                                         designed persistence, business and application logics of the product's microservices architecture by applying state of the art design patterns;
                                     </li>
                                     <li class="boxDetailsListItem">
+                                        thoroughly wrote the documentation using state of the art practices;
+                                    </li>
+                                    <li class="boxDetailsListItem">
                                         implemented and tested different recommender systems based on matrixes and neural networks;
                                     </li>
                                     <li class="boxDetailsListItem">
@@ -237,7 +360,7 @@
                 </div>
             </div>
             <!-- EDUCATION -->
-            <div id="education" class="portfolioBox active">
+            <div id="education" class="portfolioBox">
                 <!-- EDUCATION BUTTONS -->
                 <p class="portfolioBoxInfo">education</p>
                 <div class="experienceButtons"> 
@@ -433,8 +556,8 @@
 
                             </p>
                         </div>
-                    </div>
                     <!-- END ENRICO FERMI -->
+                    </div>
             </div>
             <!--
             <div id="highlightedSkills">
