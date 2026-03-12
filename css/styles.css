@@ -458,6 +458,19 @@ section {
     /* hover */
     transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
 }
+#projects_personal_other h3 {
+    color: inherit;
+    font-size: 1.5rem;
+    margin: 0.4rem 0rem;
+    /* hover */
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
+}
+#projects_personal_other video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border-radius: 8px;
+}
 #projects_zucchetti_other {
     display: flex;
     flex-direction: column;
@@ -493,6 +506,9 @@ section {
 }
 #projects_personal_other a:hover {
     transform: scale(1.2);
+}
+#projects_personal_other h3:hover {
+    transform: scale(0.9);
 }
 #projects_zucchetti_other a:hover {
     transform: scale(1.2);
