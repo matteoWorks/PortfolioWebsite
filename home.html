@@ -24,10 +24,10 @@
 
         <section id="portfolio">
             <div id="portfolioButtons" class="buttonArea">
-                <button data-target="projects" class="active">
+                <button data-target="projects">
                     projects
                 </button>
-                <button data-target="experience">
+                <button data-target="experience" class="active">
                     experience
                 </button>
                 <button data-target="education">
@@ -35,11 +35,11 @@
                 </button>
             </div>
             <!-- PROJECTS -->
-            <div id="projects" class="portfolioBox active">
+            <div id="projects" class="portfolioBox">
                 <p class="portfolioBoxInfo" style="font-size: 1.2rem;margin-bottom: 0.8rem;">five+ years of projects</p>
                 <!-- PROFESSIONAL PROJECTS BUTTONS -->
                 <div class="experienceButtons" id="experienceButtonsPROJECTS"> 
-                    <button data-target="bsc_oop22" class="active">
+                    <button data-target="bsc_oop22">
                         '22BSc/OOP
                     </button>
                     <button data-target="bsc_db22">
@@ -60,7 +60,7 @@
                     <button data-target="sde_llm24">
                         '24SDE/LLM
                     </button>
-                    <button data-target="p_llm25">
+                    <button data-target="p_llm25" class="active">
                         '25p/LLM
                     </button>
                     <button data-target="p_web26">
@@ -567,7 +567,7 @@
                 
             </div>
             <!-- EXPERIENCES -->
-            <div id="experience" class="portfolioBox">
+            <div id="experience" class="portfolioBox active">
                 <p class="portfolioBoxInfo">one+ year of experience</p>
                 <!-- EXPERIENCE BUTTONS -->
                 <div class="experienceButtons"> 
@@ -784,17 +784,79 @@
                     <button data-target="education_japanese_sng">
                         '27JLS
                     </button>
-                </div>
-                <!-- CERTIFICATE BUTTONS -->
-                <!--
-                <p class="portfolioBoxInfo">certificates</p>
-                <div class="experienceButtons"> 
-                    <button data-target="education_highschool_fermi">
-                        '23AI
+                    <button data-target="education_certificates">
+                        certificates
                     </button>
                 </div>
-                -->
                 <div class="experienceBoxBorder">
+                    <!-- CERTIFICATES -->
+                    <div class="experienceBox" id="education_certificates">
+                        <!--
+                        <div class="boxCompanyName">
+                            @<span style="color: #7c3aed;"><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">udemy</a></span>
+                            @<span style="color: #0284c7;"><a href="https://www.zucchetti.com" target="_blank" rel="noopener noreferrer">zucchetti</a></span>
+                        </div>
+                        -->
+                        <div class="boxExperienceContent">
+                            <!-- ZUCCHETTI 1 -->
+                            <h1 class="boxExperienceTitle" style="color: #0284c7; font-size: 1.8rem;">
+                                health and safety in the workplace, low risk level
+                            </h1>
+                            <p class="boxExperienceInfos">
+                                <span>&#x1F3E2; zucchetti s.p.a.</span>
+                                <span>&#x1F4CD; padua, veneto, italy</span>
+                                <span>may 2024</span>
+                            </p>
+                            <p class="boxSkillsImages">
+                            </p>
+                            <p class="boxExperienceDetails">
+                            </p>
+                            <p class="boxOther" id="education_certificates_other" >
+                            </p>
+                            <!-- END ZUCCHETTI 1 -->
+                            <!-- UDEMY 1 -->
+                            <hr>
+                            <h1 class="boxExperienceTitle" style="color: #7c3aed; font-size: 1.8rem;">
+                                artificial intelligence a-z 2023
+                            </h1>
+                            <p class="boxExperienceInfos">
+                                <span>&#x1F393; udemy</span>
+                                <span>&#x1F4CD; online</span>
+                                <span>october 2023</span>
+                            </p>
+                            <p class="boxSkillsImages">
+                                <img src="assets/logoAssets/logo_anaconda.png" alt="Anaconda" title="Anaconda">
+                                <img src="assets/logoAssets/logo_jupyter.png" alt="Jupyter" title="Jupyter">
+                                <img src="assets/logoAssets/logo_python.png" alt="Python" title="Python">
+                                <img src="assets/logoAssets/logo_python_numpy.png" alt="NumPy" title="NumPy">
+                                <img src="assets/logoAssets/logo_python_pytorch.png" alt="PyTorch" title="PyTorch">
+                            </p>
+                            <p class="boxExperienceDetails">
+                            </p>
+                            <p class="boxOther" id="education_certificates_other" >
+                                 <a style="color: #7c3aed;" href="https://udemy-certificate.s3.amazonaws.com/image/UC-ce2697ba-7b39-4828-9f07-9a21202affcd.jpg?v=1698341762000" target="_blank" rel="noopener noreferrer">certificate of completion</a>
+                            </p>
+                            <!-- END UDEMY 1 -->
+                            <!-- UDEMY -->
+                            <hr>
+                            <h1 class="boxExperienceTitle" style="color: #ea580c; font-size: 1.8rem;">
+                                data protection and information security
+                            </h1>
+                            <p class="boxExperienceInfos">
+                                <span>&#x1F3E2; tiesse informatica s.a.s.</span>
+                                <span>&#x1F4CD; padua, veneto, italy</span>
+                                <span>april 2023</span>
+                            </p>
+                            <p class="boxSkillsImages">
+                            </p>
+                            <p class="boxExperienceDetails">
+                            </p>
+                            <p class="boxOther" id="education_certificates_other" >
+                            </p>
+                            <!-- END UDEMY -->
+                        </div>
+                    </div>
+                    <!-- END CERTIFICATES -->
                     <!-- SNG -->
                     <div class="experienceBox" id="education_japanese_sng">
                         <div class="boxCompanyName">
@@ -1025,9 +1087,11 @@
                 <button data-target="englishCV" class="active">
                     english
                 </button>
+                <!--
                 <button data-target="japaneseCV">
                     日本語
                 </button>
+                -->
             </div>
             <div id="italianCV" class="curriculumBox">
                 <img class="curriculumImg" src="assets/curriculum/italianCV.png" alt="Italian Curriculum"><br>
@@ -1037,10 +1101,12 @@
                 <img class="curriculumImg" src="assets/curriculum/englishCV.png" alt="English Curriculum"><br>
                 <button class="downloadButton">download</button>
             </div>
+            <!--
             <div id="japaneseCV" class="curriculumBox">
                 <img class="curriculumImg" src="assets/curriculum/japaneseCV.png" alt="Japanese Curriculum"><br>
                 <button class="downloadButton">download</button>
             </div>
+            -->
             
             <footer id="footer">
                 <div>

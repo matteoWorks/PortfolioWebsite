@@ -261,6 +261,12 @@ section {
 .experienceBox.active {
     display: flex;
 }
+.experienceBox hr {
+    width: auto;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1.5em;
+}
 
 .boxCompanyName {
     writing-mode: sideways-lr;
@@ -390,6 +396,21 @@ section {
 #education_japanese_sng_other {
     height: 0.5rem;
 }
+#education_certificates_other {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+#education_certificates_other a {
+    color: inherit;
+    text-decoration: none;
+    /* hover */
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1)
+}
 #projects_bsc_other {
     display: flex;
     justify-content: center;
@@ -493,6 +514,9 @@ section {
     transform: scale(1.2);
 }
 #education_bachelors_unipd_other a:hover {
+    transform: scale(1.2);
+}
+#education_certificates_other a:hover  {
     transform: scale(1.2);
 }
 #projects_bsc_other a:hover {
