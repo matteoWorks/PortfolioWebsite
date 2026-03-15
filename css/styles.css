@@ -767,8 +767,8 @@ footer img {
     }
     #portfolio .experienceBox {
         display: flex;
-        margin: 0.1rem 1rem;
-        width: 93%;
+        margin: 0.5rem 1rem;
+        width: 95%;
         background-size: cover;
     }
     #portfolio .boxExperienceContent {
