@@ -699,14 +699,6 @@ footer img {
         padding: 0.8rem 1.4rem;
     }
 
-    .portfolioBoxInfo {
-        display: none;
-    }
-
-    .experienceButtons {
-        display: none;
-    }
-
     .boxExperienceTitle {
         font-size: 2rem;
     }
@@ -737,5 +729,50 @@ footer img {
     footer {
         text-align: right;
         margin-left: 4rem;
+    }
+
+    /* PORTFOLIO MOBILE */
+    html {
+        scroll-snap-type: none;
+    }
+    section {
+        scroll-snap-align: none;
+        height: auto;
+        min-height: 100vh;
+    }
+    #portfolio {
+        height: auto;
+        min-height: 100vh;
+        scroll-snap-align: none;
+        display: block;
+        padding: 2rem 0rem;
+    }
+    .portfolioBox {
+        background: transparent;
+        height: auto;
+    }
+    #portfolioButtons {
+        margin-top: 2rem;
+    }
+    .portfolioBoxInfo {
+        color: black;
+    }
+    .experienceButtons {
+        display: none;
+    }
+    #portfolio .experienceBoxBorder {
+        background: transparent;
+        flex-direction: column;
+        width: fit-content;
+    }
+    #portfolio .experienceBox {
+        display: flex;
+        margin: 0.1rem 1rem;
+        width: 93%;
+        background-size: cover;
+    }
+    #portfolio .boxExperienceContent {
+        max-height: none;
+        overflow: visible;
     }
 }
