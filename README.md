@@ -128,16 +128,16 @@ The `background_portfolioBox.png` file is also present, which is the background 
 ### Website Variables Definition <a name = "websiteVariablesDefinition"></a>
 
 > [!NOTE]
-> This is not a template—everything is written directly in the HTML. Please, explore the `home.html` and `css/styles.css` files to properly understand how everything is structured.
+> This is not a template—everything is written directly in the HTML. Please, explore the `index.html` and `css/styles.css` files to properly understand how everything is structured.
 
-Follow the above Note and explore the `index.html` file and the first rows of the `home.html` file, all the website variables are contained there. Remember also to change the `favicon.ico` and `favicon.png` files with the desired website logo.
+Follow the above Note and explore the first rows of the `index.html` file, all the website variables are contained there. Remember also to change the `favicon.ico` and `favicon.png` files with the desired website logo.
 
 ### Personal Variables Definition <a name = "personalVariablesDefinition"></a>
 
 > [!NOTE]
-> This is not a template—everything is written directly in the HTML. Please, explore the "_home.html_" and "_css/styles.css_" files to properly understand how everything is structured.
+> This is not a template—everything is written directly in the HTML. Please, explore the `index.html` and `css/styles.css` files to properly understand how everything is structured.
 
-Follow the above Note and explore the `home.html` and `css/styles.css` file.s You can follow the existing structure or personalize it however you prefer. Since this project is not built as a template, the files may feel a bit unstructured, but they should still be straightforward to navigate and modify.
+Follow the above Note and explore the `index.html` and `css/styles.css` file.s You can follow the existing structure or personalize it however you prefer. Since this project is not built as a template, the files may feel a bit unstructured, but they should still be straightforward to navigate and modify.
 
 ## Execution <a name = "execution"></a>
 
