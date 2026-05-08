@@ -57,6 +57,8 @@ The already available images shown divided by folder and in alphabetical order a
 <img src="/assets/logoAssets/logo_github_day.png" alt="GitHub Day" width="36" />
 <img src="/assets/logoAssets/logo_github_night.png" alt="GitHub Night" width="36" />
 <img src="/assets/logoAssets/logo_githubactions.png" alt="GitHub Actions" width="36" />
+<img src="/assets/logoAssets/logo_gymnasium_day.png" alt="Gymnasium Day" width="36" />
+<img src="/assets/logoAssets/logo_gymnasium_night.png" alt="Gymnasium Day" width="36" />
 <img src="/assets/logoAssets/logo_html5.png" alt="HTML5" width="36" />
 <img src="/assets/logoAssets/logo_huggingface.png" alt="Hugging Face" width="36" />
 <img src="/assets/logoAssets/logo_idapro.png" alt="IDA Pro" width="36" />

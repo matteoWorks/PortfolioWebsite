@@ -398,6 +398,8 @@ section {
 }
 #education_certificates_other {
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     text-align: center;
