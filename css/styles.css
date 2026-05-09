@@ -34,17 +34,17 @@ section {
 }
 
 #landing { 
-    background: url('../assets/backgrounds/background_landing.jpg') no-repeat center center fixed;
+    background: url('../assets/backgrounds/background_landing.jpg') no-repeat center center;
     background-size: cover;
     color: white;
 }
 #portfolio { 
-    background: url('../assets/backgrounds/background_portfolio.jpg') no-repeat center center fixed;
+    background: url('../assets/backgrounds/background_portfolio.jpg') no-repeat center center;
     background-size: cover;
     color: #111111; 
 }
 #curriculum { 
-    background: url('../assets/backgrounds/background_curriculum.jpg') no-repeat center center fixed;
+    background: url('../assets/backgrounds/background_curriculum.jpg') no-repeat center center;
     background-size: cover;
     color: white;
 }
@@ -170,7 +170,7 @@ section {
 }
 
 .portfolioBox {
-    background: url('../assets/backgrounds/background_portfolioBox.jpg') no-repeat center center fixed;
+    background: url('../assets/backgrounds/background_portfolioBox.jpg') no-repeat center center;
     color: white;
     border-radius: 12px;
 
@@ -232,7 +232,7 @@ section {
 }
 
 .experienceBoxBorder {
-    background: url('../assets/backgrounds/background_portfolio.jpg') no-repeat center center fixed;
+    background: url('../assets/backgrounds/background_portfolio.jpg') no-repeat center center;
     border-radius: 12px;
 
     padding: 0.4rem;
@@ -246,7 +246,7 @@ section {
     align-items: center;
 }
 .experienceBox {
-    background: url('../assets/backgrounds/background_portfolioBox.jpg') no-repeat center center fixed;
+    background: url('../assets/backgrounds/background_portfolioBox.jpg') no-repeat center center;
     color: white;
     border-radius: 8px;
 
