@@ -33,20 +33,20 @@ section {
     scroll-snap-align: start;
 }
 
-#landing { 
-    background: url('../assets/backgrounds/background_landing.jpg') no-repeat center center;
+#landing,
+#curriculum { 
+    background: url('../assets/backgrounds/background_dark.jpg') no-repeat center center;
     background-size: cover;
-    color: white;
+    color: #ffffff;
+
+    overflow-y: hidden;
 }
 #portfolio { 
-    background: url('../assets/backgrounds/background_portfolio.jpg') no-repeat center center;
+    background: url('../assets/backgrounds/background_light.jpg') no-repeat center center;
     background-size: cover;
     color: #111111; 
-}
-#curriculum { 
-    background: url('../assets/backgrounds/background_curriculum.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
+
+    overflow-y: hidden;
 }
 
 /* INTRODUCTION */
@@ -155,7 +155,7 @@ section {
     border: none;
     background: transparent;
     font-size: 2rem;
-    color: black;
+    color: #111111;
     margin: 0rem 3rem;
     letter-spacing: 0.1rem;
     /* hover */
@@ -170,8 +170,8 @@ section {
 }
 
 .portfolioBox {
-    background: url('../assets/backgrounds/background_portfolioBox.jpg') no-repeat center center;
-    color: white;
+    background: url('../assets/backgrounds/background_dark.jpg') no-repeat center center;
+    color: #ffffff;
     border-radius: 12px;
 
     max-width: 800px;
@@ -193,7 +193,7 @@ section {
 .portfolioBoxInfo {
     margin: 0.4rem;
     font-size: 1.3rem;
-    color: white;
+    color: #ffffff;
     letter-spacing: 0.2rem;
     /* hover */
     transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
@@ -215,7 +215,7 @@ section {
     border: none;
     background: transparent;
     font-size: 1.4rem;
-    color: white;
+    color: #ffffff;
     letter-spacing: 0.2rem;
     /* hover */
     transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
@@ -232,7 +232,7 @@ section {
 }
 
 .experienceBoxBorder {
-    background: url('../assets/backgrounds/background_portfolio.jpg') no-repeat center center;
+    background: url('../assets/backgrounds/background_light.jpg') no-repeat center center;
     border-radius: 12px;
 
     padding: 0.4rem;
@@ -246,8 +246,8 @@ section {
     align-items: center;
 }
 .experienceBox {
-    background: url('../assets/backgrounds/background_portfolioBox.jpg') no-repeat center center;
-    color: white;
+    background: url('../assets/backgrounds/background_dark.jpg') no-repeat center center;
+    color: #ffffff;
     border-radius: 8px;
 
     padding: 0rem 1rem;
@@ -594,7 +594,7 @@ section {
     margin-top: auto;
 }
 #curriculumButtons button {
-    color: white;
+    color: #ffffff;
 }
 #curriculumButtons button.active {
     color: #ff0000a2;
@@ -617,7 +617,7 @@ section {
     border: none;
     background: transparent;
     font-size: 2rem;
-    color: white;
+    color: #ffffff;
     margin: 1rem 0rem;
     /* hover */
     transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
@@ -633,7 +633,7 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     margin: 1rem;
-    color: white;
+    color: #ffffff;
     margin-top: auto;
 }
 
@@ -664,15 +664,34 @@ footer img {
     }
 
     #topNavigation {
-        writing-mode: horizontal-tb;
-        top: 0.5rem;
+        top: 0.9rem;
+        right: 0rem;
+        font-size: 0.9rem;
+    }
+    #topNavigation a:hover {
+        transform: none;
+        color: #ff1a1a;
     }
 
     #navigation {
-        writing-mode: horizontal-tb;
-        top: 0.5rem;
-        left: 0.5rem;
+        top: 0.8rem;
+        left: 0rem;
+        font-size: 0.9rem;
+
+        
+        height: 77vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
+    #navigation a{
+        display: inline-block;
+        margin: 0.05rem;
+    }
+    #navigation a:hover {
+        transform: none;
+        color: #ff1a1a;
+    } 
 
     #avigation a:hover {
         transform: scale(1.1) translateY(5px);
