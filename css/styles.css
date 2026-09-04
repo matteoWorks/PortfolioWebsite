@@ -664,8 +664,8 @@ footer img {
     }
 
     #topNavigation {
-        top: 0.9rem;
-        right: 0rem;
+        top: 1rem;
+        right: -0.1rem;
         font-size: 0.9rem;
     }
     #topNavigation a:hover {
@@ -678,8 +678,7 @@ footer img {
         left: 0rem;
         font-size: 0.9rem;
 
-        
-        height: 77vh;
+        height: 78vh;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -691,10 +690,10 @@ footer img {
     #navigation a:hover {
         transform: none;
         color: #ff1a1a;
-    } 
+    }
 
-    #avigation a:hover {
-        transform: scale(1.1) translateY(5px);
+    .mobileHidden {
+        display: none;
     }
 
     #introduction {
