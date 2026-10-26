@@ -58,7 +58,9 @@ The already available images shown divided by folder and in alphabetical order a
 <img src="/assets/logoAssets/logo_github_night.png" alt="GitHub Night" width="36" />
 <img src="/assets/logoAssets/logo_githubactions.png" alt="GitHub Actions" width="36" />
 <img src="/assets/logoAssets/logo_gymnasium_day.png" alt="Gymnasium Day" width="36" />
-<img src="/assets/logoAssets/logo_gymnasium_night.png" alt="Gymnasium Day" width="36" />
+<img src="/assets/logoAssets/logo_gymnasium_night.png" alt="Gymnasium Night" width="36" />
+<img src="/assets/logoAssets/logo_hennge_day.png" alt="HENNGE Day" width="36" />
+<img src="/assets/logoAssets/logo_hennge_night.png" alt="HENNGE Night" width="36" />
 <img src="/assets/logoAssets/logo_html5.png" alt="HTML5" width="36" />
 <img src="/assets/logoAssets/logo_huggingface.png" alt="Hugging Face" width="36" />
 <img src="/assets/logoAssets/logo_idapro.png" alt="IDA Pro" width="36" />
@@ -78,7 +80,14 @@ The already available images shown divided by folder and in alphabetical order a
 <img src="/assets/logoAssets/logo_npm.png" alt="npm" width="36" />
 <img src="/assets/logoAssets/logo_openapi_day.png" alt="OpenAPI Day" width="36" />
 <img src="/assets/logoAssets/logo_openapi_night.png" alt="OpenAPI Night" width="36" />
+<img src="/assets/logoAssets/logo_os_android.png" alt="Android OS" width="36" />
+<img src="/assets/logoAssets/logo_os_ios_day.png" alt="iOS Day" width="36" />
+<img src="/assets/logoAssets/logo_os_ios_night.png" alt="iOS Night" width="36" />
+<img src="/assets/logoAssets/logo_os_macos_day.png" alt="macOS Day" width="36" />
+<img src="/assets/logoAssets/logo_os_macos_night.png" alt="macOS Night" width="36" />
 <img src="/assets/logoAssets/logo_php.png" alt="PHP" width="36" />
+<img src="/assets/logoAssets/logo_playwright.png" alt="Playwright" width="36" />
+<img src="/assets/logoAssets/logo_poetry.png" alt="Poetry" width="36" />
 <img src="/assets/logoAssets/logo_pytest.png" alt="PyTest" width="36" />
 <img src="/assets/logoAssets/logo_python.png" alt="Python" width="36" />
 <img src="/assets/logoAssets/logo_python_numpy.png" alt="Python NumPy" width="36" />
@@ -87,7 +96,11 @@ The already available images shown divided by folder and in alphabetical order a
 <img src="/assets/logoAssets/logo_python_tensorflow.png" alt="Python TensorFlow" width="36" />
 <img src="/assets/logoAssets/logo_qt.png" alt="Qt" width="36" />
 <img src="/assets/logoAssets/logo_reactjs.png" alt="ReactJS" width="36" />
-<img src="//assets/logoAssets/logo_ruff.png" alt="Ruff" width="36" />
+<img src="/assets/logoAssets/logo_ruby.png" alt="Ruby" width="36" />
+<img src="/assets/logoAssets/logo_ruff.png" alt="Ruff" width="36" />
+<img src="/assets/logoAssets/logo_sentry.io_day.png" alt="Sentry.io Day" width="36" />
+<img src="/assets/logoAssets/logo_sentry.io_night.png" alt="Sentry.io Night" width="36" />
+<img src="/assets/logoAssets/logo_slack.png" alt="Slack" width="36" />
 <img src="/assets/logoAssets/logo_sonarqube.png" alt="SonarQube" width="36" />
 <img src="/assets/logoAssets/logo_spotify.png" alt="Spotify APIs" width="36" />
 <img src="/assets/logoAssets/logo_sql.png" alt="SQL" width="36" />
@@ -95,6 +108,8 @@ The already available images shown divided by folder and in alphabetical order a
 <img src="/assets/logoAssets/logo_sql_mysql.png" alt="SQL MySQL" width="36" />
 <img src="/assets/logoAssets/logo_sql_postgresql.png" alt="SQL PostgreSQL" width="36" />
 <img src="/assets/logoAssets/logo_staruml.png" alt="StarUML" width="36" />
+<img src="/assets/logoAssets/logo_swift_playground.png" alt="Swift Playground" width="36" />
+<img src="/assets/logoAssets/logo_swift.png" alt="Swift" width="36" />
 <img src="/assets/logoAssets/logo_tailwindcss.png" alt="TailwindCSS" width="36" />
 <img src="/assets/logoAssets/logo_typst_day.png" alt="Typst Day" width="36" />
 <img src="/assets/logoAssets/logo_typst_night.png" alt="Typst Night" width="36" />
@@ -102,6 +117,7 @@ The already available images shown divided by folder and in alphabetical order a
 <img src="/assets/logoAssets/logo_visualbasic.png" alt="Visual Basic" width="36" />
 <img src="/assets/logoAssets/logo_visualstudiocode.png" alt="Visual Studio Code" width="36" />
 <img src="/assets/logoAssets/logo_wireshark.png" alt="Wireshark" width="36" />
+<img src="/assets/logoAssets/logo_xcode.png" alt="Xcode" width="36" />
 \
 \
 `assets/language` folder:
