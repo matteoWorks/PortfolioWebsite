@@ -57,6 +57,7 @@ The already available images shown divided by folder and in alphabetical order a
 <img src="/assets/logoAssets/logo_github_day.png" alt="GitHub Day" width="36" />
 <img src="/assets/logoAssets/logo_github_night.png" alt="GitHub Night" width="36" />
 <img src="/assets/logoAssets/logo_githubactions.png" alt="GitHub Actions" width="36" />
+<img src="/assets/logoAssets/logo_groovy.png" alt="Groovy" width="36" />
 <img src="/assets/logoAssets/logo_gymnasium_day.png" alt="Gymnasium Day" width="36" />
 <img src="/assets/logoAssets/logo_gymnasium_night.png" alt="Gymnasium Night" width="36" />
 <img src="/assets/logoAssets/logo_hennge_day.png" alt="HENNGE Day" width="36" />
@@ -85,6 +86,7 @@ The already available images shown divided by folder and in alphabetical order a
 <img src="/assets/logoAssets/logo_os_ios_night.png" alt="iOS Night" width="36" />
 <img src="/assets/logoAssets/logo_os_macos_day.png" alt="macOS Day" width="36" />
 <img src="/assets/logoAssets/logo_os_macos_night.png" alt="macOS Night" width="36" />
+<img src="/assets/logoAssets/logo_oxlint.png" alt="Oxlint" width="36" />
 <img src="/assets/logoAssets/logo_php.png" alt="PHP" width="36" />
 <img src="/assets/logoAssets/logo_playwright.png" alt="Playwright" width="36" />
 <img src="/assets/logoAssets/logo_poetry.png" alt="Poetry" width="36" />
@@ -111,6 +113,7 @@ The already available images shown divided by folder and in alphabetical order a
 <img src="/assets/logoAssets/logo_swift_playground.png" alt="Swift Playground" width="36" />
 <img src="/assets/logoAssets/logo_swift.png" alt="Swift" width="36" />
 <img src="/assets/logoAssets/logo_tailwindcss.png" alt="TailwindCSS" width="36" />
+<img src="/assets/logoAssets/logo_typescript.png" alt="Typescript" width="36" />
 <img src="/assets/logoAssets/logo_typst_day.png" alt="Typst Day" width="36" />
 <img src="/assets/logoAssets/logo_typst_night.png" alt="Typst Night" width="36" />
 <img src="/assets/logoAssets/logo_uml.png" alt="UML" width="36" />
